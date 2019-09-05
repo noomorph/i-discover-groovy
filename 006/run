@@ -1,0 +1,19 @@
+#!/usr/bin/env groovy
+
+def map = [:]
+def allowed = 'ALLOWED'
+
+map.'single quote' = allowed
+map."double quote" = "${allowed}"
+map.'''triple single quote''' = allowed
+map."""triple double quote""" = """${allowed}"""
+map./Slashy \__(^_^)__\/ Strings/ = /${allowed}/
+map.$/
+Dollar slashy string/$ = /${allowed}/
+
+
+assert map.'single quote' == map.'double quote'
+assert map.'single quote' == map.'triple single quote'
+assert map.'single quote' == map.'triple double quote'
+assert map.'single quote' == map."Slashy \\__(^_^)__/ Strings"
+assert map.'single quote' == map."\nDollar slashy string"
