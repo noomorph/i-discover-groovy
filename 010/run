@@ -1,0 +1,8 @@
+#!/usr/bin/env groovy
+
+def name = "Groovy"
+def interpolatedGreeting = "Hello, ${name}"
+
+assert name instanceof String
+assert interpolatedGreeting instanceof GString
+
