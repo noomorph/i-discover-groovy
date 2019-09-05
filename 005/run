@@ -1,0 +1,7 @@
+#!/usr/bin/env groovy
+
+def map = [:]
+
+map.as = 'ALLOWED VIA DOT'
+
+assert map.as == "ALLOWED VIA DOT"
