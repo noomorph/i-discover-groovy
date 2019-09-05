@@ -1,0 +1,42 @@
+#!/usr/bin/env groovy
+
+println '''Reserved words in Groovy:
+  - as
+  - catch
+  - def
+  - enum
+  - for
+  - import
+  - new
+  - super
+  - throws
+  - while
+  - assert
+  - class
+  - default
+  - extends
+  - goto
+  - in
+  - null
+  - switch
+  - trait
+  - break
+  - const
+  - do
+  - false
+  - if
+  - instanceof
+  - package
+  - this
+  - true
+  - case
+  - continue
+  - else
+  - finally
+  - implements
+  - interface
+  - return
+  - throw
+  - try
+'''
+
