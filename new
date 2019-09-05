@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+NEXT=`ls | wc -l`
+DIR=`printf %03d $NEXT`
+
+cp -r 003 $DIR
+echo "$DIR created, now you can:"
+echo "cd $DIR"
