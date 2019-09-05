@@ -1,0 +1,9 @@
+#!/usr/bin/env groovy
+
+
+def strippedLine = '''\
+No \
+newlines\
+'''
+
+assert strippedLine == 'No newlines'
