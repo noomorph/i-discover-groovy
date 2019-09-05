@@ -1,0 +1,27 @@
+/**
+  * Person
+  */
+class Person {
+  String name
+  String location
+
+  /**
+    * Creates a greeting for a certain person.
+    * 
+    * @param otherPerson the person to greet
+    * @return a greeting message
+    */
+  String greet(String otherPerson) {
+    "${name} at ${location} says: Hello, ${otherPerson}!"
+  }
+}
+
+
+def person = new Person(
+  name: 'Yaroslav',
+  location: 'the Office'
+)
+
+def greeting = person.greet 'Groovy'
+
+println greeting
