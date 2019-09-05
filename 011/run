@@ -1,0 +1,9 @@
+#!/usr/bin/env groovy
+
+def language = [
+  name: "Groovy"
+]
+
+println "I am learning lone dollar sign (\$) interpolation in $language.name"
+println "Mind that you cannot call functions, lest you get null: $language.toString()"
+println "If you use that in curly brackets, you will get: ${language.toString()}"
