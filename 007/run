@@ -1,0 +1,6 @@
+#!/usr/bin/env groovy
+
+def a = 'Hello, '
+def b = 'world'
+
+assert (a + b) == "${a}${b}"
