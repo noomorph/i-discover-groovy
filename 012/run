@@ -1,0 +1,11 @@
+#!/usr/bin/env groovy
+
+def value = 1
+def arrowInterpolation = "value == ${-> value}"
+
+assert arrowInterpolation == "value == 1"
+value = 2
+assert arrowInterpolation == "value == 2"
+
+def longForm = "value == ${stringWriter -> stringWriter << value << " via overloaded << operator"}"
+println longForm
