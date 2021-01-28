@@ -1,3 +1,4 @@
+@groovy.transform.TupleConstructor
 class Greeter {
   String name
 }
